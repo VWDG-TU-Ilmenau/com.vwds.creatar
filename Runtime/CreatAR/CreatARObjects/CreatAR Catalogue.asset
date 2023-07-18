@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c755094c3f3249f4d833327d380f3983, type: 3}
+  m_Name: CreatAR Catalogue
+  m_EditorClassIdentifier: 
+  CreateARObjects:
+  - {fileID: 11400000, guid: 41a195a4d5c3e95488991419df167820, type: 2}
+  - {fileID: 11400000, guid: 48a0b6727b88ee247ad07e9212df77da, type: 2}
+  - {fileID: 11400000, guid: c83040803f1b6434f849c4aea59e23fd, type: 2}

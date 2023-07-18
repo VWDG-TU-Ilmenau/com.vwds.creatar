@@ -1,0 +1,33 @@
+{
+    "name": "com.vwds.creatar",
+    "version": "1.0.0",
+    "displayName": "CreatAR",
+    "description": "A Unity package that creates bounding boxes for real world objects to allow for user-to-real object interaction in smartphone AR applications.",
+    "unity": "2021.3",
+    "unityRelease": "15f1",
+    "documentationUrl": "https://github.com/VWDG-TU-Ilmenau/com.vwds.creatar/wiki",
+    "changelogUrl": "https://github.com/VWDG-TU-Ilmenau/com.vwds.creatar/blob/main/changelog.md",
+    "licensesUrl": "https://github.com/VWDG-TU-Ilmenau/com.vwds.creatar/blob/main/licensing.md",
+    "dependencies": {
+        "com.unity.xr.arfoundation": "4.2.7",
+        "com.unity.modules.xr": "1.0.0",
+        "com.unity.textmeshpro": "3.0.6"
+   },
+   "keywords": [
+      "box",
+      "colliders",
+      "augmented",
+      "reality",
+      "mixed",
+      "virtal"
+    ],
+    "author": {
+      "name": "Virtual Worlds and Digital Games Research Group - Technische Universität Ilmenau",
+      "email": "vwds-wm@tu-ilmenau.de",
+      "url": "https://www.tu-ilmenau.de/en/university/departments/department-of-economic-sciences-and-media/profile/institutes-and-groups/group-virtual-worlds-and-digital-games-group"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/VWDG-TU-Ilmenau/com.vwds.creatar.git"
+    }
+  }
