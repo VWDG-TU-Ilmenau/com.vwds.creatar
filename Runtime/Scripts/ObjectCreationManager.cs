@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.XR.ARFoundation;
 using UnityEngine;
 
 namespace vwds.CreatAR
@@ -19,6 +20,7 @@ namespace vwds.CreatAR
         private float widthSize = 0f;
         private float heightSize;
         private LineRenderer lineRenderer;
+        private ARCameraManager arCameraManager;
         private void Awake()
         {
             if (Instance != null && Instance != this)
@@ -27,7 +29,10 @@ namespace vwds.CreatAR
             }
             else
             {
+                arCameraManager = FindObjectOfType<ARCameraManager>();
                 Instance = this;
+                transform.parent = arCameraManager.transform;
+                transform.position = arCameraManager.transform.position;
             }
         }
         // Start is called before the first frame update

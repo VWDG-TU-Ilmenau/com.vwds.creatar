@@ -10,12 +10,9 @@ namespace vwds.CreatAR
         // Start is called before the first frame update
         public bool isMouse;
         private Camera cam;
-        private ARRaycastManager arRaycastManager;
-        private static List<ARRaycastHit> hits = new List<ARRaycastHit>();
         void Start()
         {
-            arRaycastManager = GetComponent<ARRaycastManager>();
-            cam = GetComponentInChildren<Camera>();
+            cam = FindObjectOfType<ARCameraManager>().GetComponent<Camera>();
         }
 
         // Update is called once per frame
@@ -33,8 +30,6 @@ namespace vwds.CreatAR
                         // Debug.Log("hit");
                         if (hit.transform.CompareTag("CreatARObject"))
                         {
-                            // Color newColor = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
-                            // hit.collider.GetComponent<MeshRenderer>().material.color = newColor;
                             CreatARObjectsManager.Instance.SelectObject(hit.transform.GetComponentInParent<CreatARObjBehaviour>().gameObject);
                         }
                     }
@@ -48,11 +43,8 @@ namespace vwds.CreatAR
                     RaycastHit hit;
                     if (Physics.Raycast(ray, out hit))
                     {
-                        // Debug.Log("hit");
                         if (hit.transform.CompareTag("CreatARObject"))
                         {
-                            // Color newColor = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f));
-                            // hit.collider.GetComponent<MeshRenderer>().material.color = newColor;
                             CreatARObjectsManager.Instance.SelectObject(hit.transform.parent.gameObject);
                         }
                     }
