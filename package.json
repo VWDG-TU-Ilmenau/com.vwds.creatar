@@ -29,5 +29,12 @@
     "repository": {
       "type": "git",
       "url": "git+https://github.com/VWDG-TU-Ilmenau/com.vwds.creatar.git"
-    }
-  }
+    },
+    "samples":[
+      {
+        "displayName": "Example Scene",
+        "description": "Contains sample scene for a creating the bounding box",
+        "path": "Samples~/Example Scene"
+      }
+    ]
+}
